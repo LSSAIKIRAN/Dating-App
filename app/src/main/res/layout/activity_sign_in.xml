@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.SignInActivity">
+
+    <LinearLayout
+        android:id="@+id/numberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_180mdp"
+            android:background="@drawable/text_bg"
+            android:hint="Enter your number"
+            android:padding="@dimen/_10mdp" />
+
+        <Button
+            android:id="@+id/otpBtn"
+            android:layout_width="@dimen/_150mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:background="@drawable/btn_bg"
+            android:text="Get OTP"
+            android:textStyle="bold"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/otpNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_180mdp"
+            android:background="@drawable/text_bg"
+            android:inputType="number"
+            android:hint="Enter OTP"
+            android:padding="@dimen/_10mdp" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="@dimen/_150mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:background="@drawable/btn_bg"
+            android:text="Submit"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
